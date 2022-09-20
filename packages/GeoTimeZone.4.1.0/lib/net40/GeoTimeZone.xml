@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoTimeZone</name>
+    </assembly>
+    <members>
+        <member name="T:GeoTimeZone.TimeZoneLookup">
+            <summary>
+            Provides the time zone lookup functionality.
+            </summary>
+        </member>
+        <member name="M:GeoTimeZone.TimeZoneLookup.GetTimeZone(System.Double,System.Double)">
+            <summary>
+            Determines the IANA time zone for given location coordinates.
+            </summary>
+            <param name="latitude">The latitude of the location.</param>
+            <param name="longitude">The longitude of the location.</param>
+            <returns>A <see cref="T:GeoTimeZone.TimeZoneResult"/> object, which contains the result(s) of the operation.</returns>
+        </member>
+        <member name="T:GeoTimeZone.TimeZoneResult">
+            <summary>
+            Contains the result of a time zone lookup operation.
+            </summary>
+        </member>
+        <member name="P:GeoTimeZone.TimeZoneResult.Result">
+            <summary>
+            Gets the primary result of the time zone lookup operation.
+            </summary>
+        </member>
+        <member name="P:GeoTimeZone.TimeZoneResult.AlternativeResults">
+            <summary>
+            Gets any alternative results of the time zone lookup operation.
+            This usually happens very close to borders between time zones.
+            </summary>
+        </member>
+    </members>
+</doc>
